@@ -1,0 +1,13 @@
+/* Área principal das receitas em modo flex */
+main {
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+}
+
+/* Cartões de receitas */
+.card {
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+/* Configurar o layout com flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+    margin: 0;
+}
+
+/* Cabeçalho fixo no topo */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px; /* Altura do cabeçalho */
+    z-index: 1000; /* Fica acima do conteúdo */
+    background-color: #f8f9fa;
+}
+
+/* Ajuste para o conteúdo não ser coberto pelo cabeçalho */
+main, div {
+    flex: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
+    padding-top: 210px; /* Espaço igual à altura do cabeçalho */
+    padding-bottom: 40px; /* Espaço para evitar sobreposição do rodapé */
+	background-color: #ccc;
+}
+
+/* Rodapé fixo no fundo */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 40px; /* Altura do rodapé */
+    background-color: #f8f9fa;
+}
+
